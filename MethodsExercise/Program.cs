@@ -1,10 +1,24 @@
-﻿namespace MethodsExercise
+﻿using System;
+
+namespace MethodsExercise
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("What is your favoriate color?");
+            string color = Console.ReadLine();
+
+            Console.WriteLine("What is your favorite animal?");
+            string animal = Console.ReadLine();
+
+            Console.WriteLine("What is your favorite band?");
+            string band = Console.ReadLine();
+
+            Console.WriteLine($"{name} went to go see {band} live but a {color} {animal} blocked their drive way making them late");
         }
     }
 }
